@@ -29,6 +29,19 @@
   left: calc(50% - 15rem);
 }
 
+.post-title {
+  width: 100%;
+}
+
+.post-content {
+  width: 50vw;
+  height: 50vh;
+}
+
+.postBtn {
+  width: 20%;
+}
+
 * {
   margin: 0;
   padding: 0;
