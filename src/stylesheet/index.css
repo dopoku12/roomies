@@ -1,0 +1,85 @@
+.modal-backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.modal-backdrop .modal-content {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 20rem;
+}
+
+.modal-card {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 50vw;
+  height: 60vh;
+  z-index: 10;
+  position: fixed;
+  top: 20vh;
+  left: calc(50% - 15rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4c606b;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background-color: #f47d2f;
+  height: 10vh;
+  width: 100vw;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+header ul li {
+  gap: 5fr 5fr;
+}
+
+.Main {
+  background-color: #0084ff;
+  min-width: 100%;
+}
+.Main .posting {
+  width: auto;
+}
+
+footer {
+  background-color: black;
+}
+footer nav {
+  position: fixed;
+}
+footer nav Ul {
+  list-style: none;
+  display: flex;
+}
+footer nav Ul li {
+  gap: 5fr 5fr;
+}
+
+/*# sourceMappingURL=index.css.map */
