@@ -6,6 +6,7 @@ import Modal from './components/Modal'
 import ChatPage from './Chatpage';
 import Footer from "./components/Footer";
 import { useState } from "react";
+import Questionnaire from './components/questionnaire/questionnaire.js'
 
 function App() {
 
@@ -37,8 +38,10 @@ function App() {
       <button id={items.idName} onClick={items.clickHandler}>
         <FontAwesomeIcon icon={items.index} />
       </button>
+      
     </li>
   ))
+
 
   //Footer
   const AwesomeIconsFoot = footIndex.map((items) =>
@@ -46,9 +49,15 @@ function App() {
     <li key={items.idName} >
       <button id={items.idName} onClick={items.clickHandler}>
         <FontAwesomeIcon icon={items.footIndex} />
+
+       
       </button>
+
+       
     </li>
   ))
+
+  
 
   //Flex Container
   return (
@@ -61,7 +70,10 @@ function App() {
         </button>)}
       >
       </Main>
-
+      <div>
+        <ChatPage></ChatPage>
+        <Questionnaire></Questionnaire>
+      </div>
       {//⬇️ for opening and closing Modal check Modal.js for rest of code
       }
       {value && <Modal closeModal={setValue} />}
