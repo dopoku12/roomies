@@ -20,14 +20,13 @@ function App() {
     { idName: "searchBtn", mainIndex: faSearch, status: value, clickHandler: function click() { } },
     { idName: "homeBtn", footIndex: faHome, status: value, clickHandler: function click() { } },
 
-    { idName: "plusBtn", footIndex: faPlus, status: value, clickHandler: function post() { setValue(true); console.log('clicked'); } },
+    { idName: "plusBtn", footIndex: faPlus, status: value, clickHandler: function post() { setValue(true); } },
 
     { idName: "messageBtn", footIndex: faMessage, status: value, clickHandler: function click() { } }
   ]
   //SearchBtn icon and its given id
   const searchBtn = faIcons[2].mainIndex;
   const searchBtnId = faIcons[3].idName;
-  console.log('stat:', faIcons[0].status);
   //Array filter for nav Icons on Footer 
   const footIndex = faIcons.filter((items) => items.footIndex)
   //Array filter for nav Icons on Header
@@ -40,7 +39,7 @@ function App() {
       <button id={items.idName} onClick={items.clickHandler}>
         <FontAwesomeIcon icon={items.index} />
       </button>
-      
+
     </li>
   ))
 
@@ -52,14 +51,14 @@ function App() {
       <button id={items.idName} onClick={items.clickHandler}>
         <FontAwesomeIcon icon={items.footIndex} />
 
-       
+
       </button>
 
-       
+
     </li>
   ))
 
-  
+
 
   //Flex Container
   return (
@@ -73,8 +72,8 @@ function App() {
       >
       </Main>
       <div>
-        <signup/>
-        <login/>
+        <signup />
+        <login />
       </div>
       <div>
         <ChatPage></ChatPage>

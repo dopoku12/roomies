@@ -18,7 +18,7 @@
 .modal-card {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  background-color: white;
+  background-color: #f3f9fc;
   padding: 1rem;
   text-align: center;
   width: 50vw;
@@ -26,7 +26,7 @@
   z-index: 10;
   position: fixed;
   top: 20vh;
-  left: calc(50% - 15rem);
+  left: calc(50% - 10rem);
 }
 
 .post-title {
@@ -39,4 +39,11 @@
 
 .postBtn {
   width: 20%;
+}
+.card {
+  background-color: #f3f9fc;
+  padding: 1rem;
+  text-align: center;
+  width: 50vw;
+  height: 60vh;
 }
