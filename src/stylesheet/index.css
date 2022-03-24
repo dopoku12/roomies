@@ -18,7 +18,7 @@
 .modal-card {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  background-color: white;
+  background-color: #f3f9fc;
   padding: 1rem;
   text-align: center;
   width: 50vw;
@@ -26,7 +26,7 @@
   z-index: 10;
   position: fixed;
   top: 20vh;
-  left: calc(50% - 15rem);
+  left: calc(50% - 10rem);
 }
 
 .post-title {
@@ -42,13 +42,25 @@
   width: 20%;
 }
 
+.card {
+  background-color: #f3f9fc;
+  padding: 1rem;
+  text-align: center;
+  width: 50vw;
+  height: 60vh;
+}
+
+.searchbtn {
+  width: 10%;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #4c606b;
+  background-color: #2c282c;
   width: 100%;
   height: 100%;
 }
@@ -75,10 +87,12 @@ header ul li {
 
 .Main {
   background-color: #0084ff;
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
 }
-.Main .posting {
-  width: auto;
+.Main .search {
+  min-width: 85%;
+  max-width: 100%;
 }
 
 footer {
