@@ -21,7 +21,7 @@ The purpose of this app is to assist users with finding compatible roommates thr
 
 The original idea stemmed from finding compatible roommates for collegiate housing; and many of the features that are planned for later integration are intended to provide efficiency for that particular user-base.  
 
-While the collegiate aspects where important for the inception of Roomeaz and is likely to be a heavy factor in future development; the current and future versions of the application is set up to allow any assigned user to make connections and seek roommates.  Should the uptick in cohabitation scenarios continue with current housing trends; accessible means to communicate with and vet potential roommates would be an important service to have available. 
+While the collegiate aspects where important for the inception of Roomeaz and is likely to be a heavy factor in future development; the current and future versions of the application is set up to allow any given user to make connections and seek roommates.  Should the uptick in cohabitation scenarios continue with current housing trends; accessible means to communicate with and vet potential roommates would be an important service to have available. 
 
 **DISCLAIMER:** 
 THIS APPLICATION IS STILL IN DEVELOPMENT.  FOR TESTING PURPOSES USER-to-USER FUNCTIONALITY MAY AT TIMES BE ENABLED AND ACCESSED.  DATA MADE PUBLIC ON THIS APPLICATION MAY BE SEEN BY OTHER USERS.  ROOMEAZ DOES NOT CURRENTLY MODIFY OR SUSPEND USERS REGARDLESS OF ACTION OR REMOVE ADDED POSTINGS REGARDLESS OF CONTENT.  
@@ -60,10 +60,10 @@ AS LONG AS THIS DISCLAIMER IS SEEN;
 
 ### Technology:
 
-The current authentication setup for Roomeaz uses JSON Web Token standards to verify logged-in users.  The current key is { PUBLIC - / - PRIVATE } so { RELEVENT -/- DISCLAIMER }.  
+The current authentication setup for Roomeaz uses JSON Web Token standards to verify logged-in users.  This program currently uses a private authentication key.
 A large aspect of making the product version of the Roomeaz app a safe place to meet new roommates will be through second-stage authentication methods.
 
-The first Second Stage Verification (SSV) thought up by the *CrimeShark* team and likely one of the first to find future implementation will be the verification of a user’s college: by cross referencing selectable colleges with an external api to verify the existence of said college.  This would provide the user a verify badge identifying them as a college student which could assist with easy identification and organization.
+The first Second Stage Verification (SSV) thought up by our team and likely one of the first to find future implementation will be the verification of a user’s college: by cross referencing selectable colleges with an external api to verify the existence of said college.  This would provide the user a verify badge identifying them as a college student which could assist with easy identification and organization.
 
 ### Future Developments / User Expirience:
 
