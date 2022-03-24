@@ -25,7 +25,7 @@
 			},{
 				questionText:'Where do you typically do homework?',
 				id:2,
-				answerOption:[
+				answerOptions:[
 					{answerText:'At my desk.', isValue:3 },
 					{answerText:'In the Library.',isValue: 2 },
 					{answerText:'In a study lounge or similar space.', isValue: 1 },
@@ -34,7 +34,7 @@
 			},{
 				questionText:'Do you Smoke?',
 				id:3,
-				answerOption:[
+				answerOptions:[
 					{answerText:'Yes.', isValue:5 },
 					{answerText:'No.',isValue: 1 },
 					{answerText: 'Uhmmm, only when I drink ', isValue:3}
@@ -43,7 +43,7 @@
 			},{
 				questionText:'Do you usually tend to have friends/romantic interests back to you room, or do you go to their room?',
 				id:4,
-				answerOption:[
+				answerOptions:[
 					{answerText:'I like to have people to my room.', isValue:4 },
 					{answerText:'I like to go to other people’s rooms',isValue: 2 },
 					{answerText: '50/50 ', isValue:3},
@@ -69,13 +69,6 @@
 			}else{
 				setShowScore(true);
 			}
-		// const handleAnswerOptionClick = ()=> {
-		// 	const persVal = useState.value
-		// 	if (persVal) {
-		// 		setScore(score + persVal)
-		// 		console.log(persVal)
-		// 	}
-		
 
 		}
 		return (
