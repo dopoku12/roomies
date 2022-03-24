@@ -42,6 +42,7 @@ function Modal({ closeModal }) {
 
     console.log('useState:', mainCardContent);
 
+    inputVal.filter((items))
 
 
     return (<div>
