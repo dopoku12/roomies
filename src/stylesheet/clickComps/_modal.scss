@@ -1,12 +1,12 @@
-.modal-backdrop {
+#modal-backdrop {
   position: fixed;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.877);
   width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
-  .modal-content {
+  #modal-content {
     background-color: white;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -15,13 +15,13 @@
   }
 }
 
-.modal-card {
+#modal-card {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   background-color: #f3f9fc;
   padding: 1rem;
   text-align: center;
-  width: 50vw;
+  width: 60vw;
   height: 60vh;
   z-index: 10;
   position: fixed;
@@ -29,15 +29,15 @@
   left: calc(50% - 10rem);
 }
 
-.post-title {
+#post-title {
   width: 100%;
 }
-.post-content {
-  width: 50vw;
+#post-content {
+  width: 100%;
   height: 50vh;
 }
 
-.postBtn {
+#postBtn {
   width: 20%;
 }
 .card {

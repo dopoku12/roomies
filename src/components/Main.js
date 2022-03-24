@@ -1,11 +1,11 @@
-// const sideImgOne = 'public/connections (1).svg'
-// const sideImgTwo = 'public/home.svg'
+const sideImgOne = 'public/connections (1).svg'
+const sideImgTwo = 'public/home.svg'
 
 
 function Main(props) {
 
     console.log("header Main.js:", props.cardHeader)
-    console.log("body Main.js", props.cardMain)
+    console.log("body Main.js:", props.cardMain)
     return (
         <div>
             <article className="Main">
@@ -21,12 +21,16 @@ function Main(props) {
                 </p>
             </div>
 
-            {
-                //    <img className="phoneImg" src={sideImgOne} alt="friends-on-phone" />
-            }
-            {
-                // <img className="laptopImg" src={sideImgTwo} alt="friends-on-laptop" />
-            }
+            <aside className="left">
+                {
+                    <img className="phoneImg" src={sideImgOne} alt="friends-on-phone" />
+                }
+            </aside>
+            <aside className='right'>
+                {
+                    <img className="laptopImg" src={sideImgTwo} alt="friends-on-laptop" />
+                }
+            </aside>
         </div>
 
     )
