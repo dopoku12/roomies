@@ -1,5 +1,4 @@
-	import React, { useState } from 'react';
-
+import React, { useState } from 'react';
 
 	export default function App() {
 		const questions = [
@@ -51,6 +50,7 @@
 	
 				]
 			}
+
 		];
 
 		const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -71,24 +71,34 @@
 			}
 
 		}
+
+		const styleText={
+			fontSize: 50,
+			fontWeight: 'bold',
+		}
+
+		const cardStyle='card bg-primary'
+
 		return (
 			<div className='app'>
 				{showScore ? (
-					<div className='score-section'>
-						You scored {score} out of {questions.length}
+					<div style= {styleText} 	className={cardStyle}>
+						Your personality score is {score}.
 					</div>
 				) : (
 					<>
-						<div className='question-section'>
+						<div className= {cardStyle}>
+						<div className='question'>
 							<div className='question-count'>
-								<span>Question {currentQuestion + 1}</span>/{questions.length}
+								<span style= {styleText} className=''>Question {currentQuestion + 1}</span>/{questions.length}
 							</div>
-							<div className='question-text'>{questions[currentQuestion].questionText}</div>
+							<div className='question-text m-2'>{questions[currentQuestion].questionText}</div>
 						</div>
-						<div className='answer-section'>
+						<div className='answer-section m-2'>
 							{questions[currentQuestion].answerOptions.map((answerOption) => (
-								<button onClick={() => handleAnswerOptionClick(answerOption.isValue)}>{answerOption.answerText}</button>
+								<button className='m-2' onClick={() => handleAnswerOptionClick(answerOption.isValue)}>{answerOption.answerText}</button>
 							))}
+						</div>
 						</div>
 					</>
 				)}

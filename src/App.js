@@ -3,8 +3,8 @@ import { faHome, faPlus, faMessage, faBell, faUser, faSearch } from "@fortawesom
 import Header from './components/Header';
 import Main from './components/Main';
 import Modal from './components/Modal';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+// import Login from './pages/Login';
+// import Signup from './pages/Signup';
 import ChatPage from './Chatpage';
 import Footer from "./components/Footer";
 import { useState } from "react";
@@ -76,7 +76,7 @@ function App() {
         <login />
       </div>
       <div>
-        <ChatPage></ChatPage>
+        {/* <ChatPage></ChatPage> */}
         <Questionnaire></Questionnaire>
       </div>
       {//⬇️ for opening and closing Modal check Modal.js for rest of code
