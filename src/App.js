@@ -76,12 +76,14 @@ function App() {
         <login />
       </div>
       <div>
+        {value && <Modal closeModal={setValue} />}
+
         {/* <ChatPage></ChatPage> */}
         <Questionnaire></Questionnaire>
       </div>
-      {//⬇️ for opening and closing Modal check Modal.js for rest of code
+      {//⬇️ for opening and closing Modal check Modal.js for rest of code 
       }
-      {value && <Modal closeModal={setValue} />}
+
 
 
       <footer>

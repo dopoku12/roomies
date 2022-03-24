@@ -8,7 +8,7 @@ function Modal({ closeModal }) {
     const [print, setPrint] = useState(false)
     const inputVal = [
         {
-            className: "post-title",
+            idName: "post-title",
             type: 'text',
             holderText: "Enter title...",
             func: function cardGen(e) {
@@ -18,7 +18,7 @@ function Modal({ closeModal }) {
         },
 
         {
-            className: "post-content",
+            idName: "post-content",
             type: 'text',
             holderText: "Share with us...",
             func: function cardGen(e) {
@@ -28,7 +28,7 @@ function Modal({ closeModal }) {
         },
 
         {
-            className: 'postBtn',
+            idName: 'postBtn',
             type: "button",
             value: "Post",
             func: function postContent() {
@@ -41,23 +41,22 @@ function Modal({ closeModal }) {
     ]
 
     console.log('useState:', mainCardContent);
-
-    // inputVal.filter((items))
-
+    console.log('title', cardTitle);
+    const btn = inputVal.filter((items) => items.value)
+    console.log('button:', btn);
 
     return (<div>
-        <div className="modal-backdrop" onClick={() => closeModal(false)} >
+        <div id="modal-backdrop" onClick={() => closeModal(false)} >
         </div>
-        <section className="modal-card">
+        <section id="modal-content" >
 
-            <div className="modal-content">
+            <div id="modal-card" >
                 <button onClick={() => closeModal(false)}>X</button>
                 {inputVal.map((items) => (
-                    <div key={items.className}>
-                        <input className={items.className} type={items.type} value={items.value} placeholder={items.holderText} onChange={items.func} />
+                    <div key={items.idName}>
+                        <input id={items.idName} type={items.type} value={items.value} placeholder={items.holderText} onChange={items.func} />
                     </div>
                 )
-
 
                 )
                 }
