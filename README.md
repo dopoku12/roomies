@@ -24,9 +24,9 @@ The original idea stemmed from finding compatible roommates for collegiate housi
 While the collegiate aspects where important for the inception of Roomeaz and is likely to be a heavy factor in future development; the current and future versions of the application is set up to allow any assigned user to make connections and seek roommates.  Should the uptick in cohabitation scenarios continue with current housing trends; accessible means to communicate with and vet potential roommates would be an important service to have available. 
 
 **DISCLAIMER:** THIS APPLICATION IS STILL IN DEVELOPMENT.  FOR TESTING PURPOSES USER-to-USER FUNCTIONALITY MAY AT TIMES BE ENABLED AND ACCESSED.  DATA MADE PUBLIC ON THIS APPLICATION MAY BE SEEN BY OTHER USERS.  ROOMEAZ DOES NOT CURRENTLY MODIFY OR SUSPEND USERS REGARDLESS OF ACTION OR REMOVE ADDED POSTINGS REGARDLESS OF CONTENT.  
-AS LONG AS THIS DISCLAIMER IS INCLUDED IN THIS “README.md”; 
+AS LONG AS THIS DISCLAIMER IS INCLUDED IN THIS “README.md”;  
 **DO NOT** USE REAL HOME-ADDRESSES AND REFRAIN FROM FAMILY AND GIVEN NAMES WHILE UTILIZING Roomeaz.
-AS LONG AS THIS DISCLAIMER IS SEEN; 
+AS LONG AS THIS DISCLAIMER IS SEEN;  
 **DO NOT** USE REAL HOME-ADDRESSES AND REFRAIN FROM FAMILY AND GIVEN NAMES WHILE UTILIZING Roomeaz.
  
 
