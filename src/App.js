@@ -2,7 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPlus, faMessage, faBell, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
 import Header from './components/Header';
 import Main from './components/Main';
-import Modal from './components/Modal'
+import Modal from './components/Modal';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import ChatPage from './Chatpage';
 import Footer from "./components/Footer";
 import { useState } from "react";
@@ -70,6 +72,10 @@ function App() {
         </button>)}
       >
       </Main>
+      <div>
+        <signup/>
+        <login/>
+      </div>
       <div>
         <ChatPage></ChatPage>
         <Questionnaire></Questionnaire>
