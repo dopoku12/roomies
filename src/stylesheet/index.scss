@@ -1,4 +1,5 @@
 @use "clickComps/_modal.scss";
+@use "clickComps/_icons.scss";
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@ $primary: #f47d2f;
 $secondary: #2c282c;
 $blue: #4c606b;
 body {
-  background-color: #4c606b;
+  background-color: $secondary;
   width: 100%;
   height: 100%;
 }
@@ -34,10 +35,21 @@ header {
 
 .Main {
   background-color: rgb(0, 132, 255);
-  min-width: 100%;
+  width: 100%;
+  height: 100%;
 
-  .posting {
-    width: auto;
+  // .laptopImg {
+  //   width: 30%;
+  //   height: 30%;
+  // }
+  // .phoneImg {
+  //   width: 30%;
+  //   height: 30%;
+  // }
+
+  .search {
+    min-width: 85%;
+    max-width: 100%;
   }
 }
 
