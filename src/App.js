@@ -2,10 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPlus, faMessage, faBell, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
 import Header from './components/Header';
 import Main from './components/Main';
-import Modal from './components/Modal'
-// import ChatPage from './Chatpage';
+import Modal from './components/Modal';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import ChatPage from './Chatpage';
 import Footer from "./components/Footer";
 import { useState } from "react";
+import Questionnaire from './components/questionnaire/questionnaire.js'
 
 function App() {
 
@@ -36,8 +39,10 @@ function App() {
       <button id={items.idName} onClick={items.clickHandler}>
         <FontAwesomeIcon icon={items.index} />
       </button>
+
     </li>
   ))
+
 
   //Footer
   const AwesomeIconsFoot = footIndex.map((items) =>
@@ -45,9 +50,15 @@ function App() {
     <li key={items.idName} >
       <button id={items.idName} onClick={items.clickHandler}>
         <FontAwesomeIcon icon={items.footIndex} />
+
+
       </button>
+
+
     </li>
   ))
+
+
 
   //Flex Container
   return (
@@ -60,7 +71,14 @@ function App() {
         </button>)}
       >
       </Main>
-
+      <div>
+        <signup />
+        <login />
+      </div>
+      <div>
+        <ChatPage></ChatPage>
+        <Questionnaire></Questionnaire>
+      </div>
       {//⬇️ for opening and closing Modal check Modal.js for rest of code
       }
       {value && <Modal closeModal={setValue} />}

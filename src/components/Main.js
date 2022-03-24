@@ -4,8 +4,6 @@
 
 function Main(props) {
 
-
-
     console.log("header Main.js:", props.cardHeader)
     console.log("body Main.js", props.cardMain)
     return (

@@ -1,13 +1,22 @@
-function ChatPage() {
-    return (<div classname='chat'>
+import React, { Component } from 'react';
 
 
-        <input type="text" placeholder="Message..." />
-
-
-    </div>
-    )
-
+class Post extends Component {
+    state = { value:'' } 
+    render() { 
+        return (
+            <React.Fragment>
+            <textarea placeholder='Post'>
+                <input type="text" value={this.state.value} onChange={this.handleChange}/>
+            </textarea>
+            </React.Fragment>
+        );
+    }
 }
+ 
+export default Post ;
 
-export default ChatPage
+
+
+  
+ 
