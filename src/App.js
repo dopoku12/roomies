@@ -5,10 +5,16 @@ import Main from './components/Main';
 import Modal from './components/Modal';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import ChatPage from './Chatpage';
+// import ChatPage from './Chatpage';
 import Footer from "./components/Footer";
 import { useState } from "react";
 import Questionnaire from './components/questionnaire/questionnaire.js'
+import {ApolloProvider,ApolloClient, InMemoryCache } from "@apollo/client"
+
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache()
+});
 
 function App() {
 
@@ -62,6 +68,7 @@ function App() {
 
   //Flex Container
   return (
+    <ApolloProvider client={client}>
     <div className="container" >
       <Header faIcons={AwesomeIconsHeader} />
 
@@ -90,6 +97,7 @@ function App() {
         <Footer faIcons={AwesomeIconsFoot} />
       </footer>
     </div>
+    </ApolloProvider>
   );
 
 }
