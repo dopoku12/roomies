@@ -90,23 +90,25 @@ Luckily these two data-sets have such different periodicity; with the infrequent
 data is maintained with Mongodb using the Mongoose ODM 
 
 The data sets used at launch are as follows: 
-**Users**
+- **Users**
 
-**Posts**
+- **Posts**
 
 
 **Users** are comprised of:
-*Id*: Auto Increment-Generated
-*Username*: Text-Input
-*Email-Address*: Text-Input
-*Password*: Text-Input
+
+- *Id*: Auto Increment-Generated
+- *Username*: Text-Input
+- *Email-Address*: Text-Input
+- *Password*: Text-Input
 
 **Posts** are comprised of:
-*Id*: Auto Increment-Generated
-*User*: Passed through from value of posters username on-click event
-*Post-Text*: Text-Input
 
-**User to user messaging** will have its data processing pushed further into the client side; 
+- *Id*: Auto Increment-Generated
+- *User*: Passed through from value of posters username on-click event
+- *Post-Text*: Text-Input
+
+**User to user messaging:** will have its data processing pushed further into the client side; 
 as this data will hopefully reach levels that would overwhelm server-side memory use.. 
 
 
